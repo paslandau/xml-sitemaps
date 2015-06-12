@@ -1,11 +1,10 @@
 #todo
 
-- provide example data for screaming frog
+- add sitemap builder
+- add function to save xml sitemap to file
+- add tests
+- docu/readme
 - doc comments
-- docu
-- add logging to PageRank calculation for large graphs
-- introduce `CalculationResult` class holding a reference to `Graph` and the result of the last PageRank round
-- 
 
 #dev-master
 

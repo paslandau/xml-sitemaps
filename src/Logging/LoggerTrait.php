@@ -1,6 +1,6 @@
 <?php
 
-namespace paslandau\PageRank;
+namespace paslandau\XmlSitemaps\Logging;
 
 use Monolog\Handler\StreamHandler;
 use Monolog\Logger;
