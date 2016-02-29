@@ -1,6 +1,7 @@
 <?php
 
 use GuzzleHttp\Client;
+use paslandau\IOUtility\IOUtil;
 use paslandau\XmlSitemaps\SitemapManager;
 
 require_once __DIR__ . "/bootstrap.php";
@@ -13,6 +14,7 @@ $cacheDir = 'E:\Programmierung_Cache\xml-sitemaps';
 $sm->activateCache($cacheDir);
 $url = 'http://www.myseosolution.de/sitemap.xml';
 $s = $sm->fetchSitemap($url, true);
-foreach ($s->getPlainUrls() as $url) {
-    echo "$url\n";
-}
+$result = [];
+    foreach($s->getUrls() as $u) {
+        $result[] = ["sitemap" => $url, "url" => $u->getLoc()];
+    }

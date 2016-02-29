@@ -147,6 +147,10 @@ class SitemapManager
     }
 
     /**
+     * Fetches the Sitemaps from $urls[]. Returns an array of Sitemap objects using the same keys as in $urls. E.g.:
+     * $urls = ["sm1" => "http://example.com/sitemap1.xml", "sm2" => "http://example.com/sitemap1.xml" ];
+     * ...
+     * $result = ["sm1" => Sitemap(), "sm2" => Sitemap()];
      * @param array $urls
      * @param null $maxRetries
      * @param null $parallelRequests
